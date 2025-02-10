@@ -17,19 +17,17 @@ def executar_teste(tipo_lista):
         lista_merge = lista[:]
         lista_bubble = lista[:]
 
-        # Medir os tempos de execução
+        # Mede os tempos de execução
         tempo_quick = medir_tempo(quicksort, lista_quick)
         tempo_merge = medir_tempo(mergesort, lista_merge)
-        
-        # Formatar os tempos para 6 casas decimais
         tempos_quick.append(f"{tempo_quick:.6f}")
         tempos_merge.append(f"{tempo_merge:.6f}")
 
-        if tamanho <= 10000:  # Evita travamento do BubbleSort
+        if tamanho <= 10000: 
             tempo_bubble = medir_tempo(bubblesort, lista_bubble)
             tempos_bubble.append(f"{tempo_bubble:.6f}")
         else:
-            tempos_bubble.append("N/A")  # Adiciona "N/A" para valores ausentes do BubbleSort
+            tempos_bubble.append("N/A") 
 
         resultados.append([tamanho, tempos_quick[-1], tempos_merge[-1], tempos_bubble[-1]])
 
