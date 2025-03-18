@@ -24,7 +24,7 @@ Os testes são executados em diferentes cenários para analisar tempo de execuç
 ## Estrutura do Projeto
 
 ```
-📂 Desafio-2
+📂 ordenacao
 │── 📄 main.py               # Executa os testes e gera gráficos
 │── 📄 sorting_algorithms.py # Implementação dos algoritmos
 │── 📄 performance_tests.py  # Mede o tempo de execução
